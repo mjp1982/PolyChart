@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #333;
+    overflow-x: hidden;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+}
+body a, body a:hover, body a:visited, body a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#container {font-size:1em; overflow:hidden; position:relative; margin:1em auto}
+#container .polychart {position:relative; width:10em; height:10em; overflow:hidden;float:left; margin:0em -0.1em 0em 0em;}
+#container .polychart h3 {color:#fff; font-weight:normal; font-size:1em; text-align:center; position:absolute; bottom:0.3em; width:10em;}
+#container .polychart > div {position:absolute; bottom:0; left:0; width: 0; height: 0; border-left: 5em solid transparent; border-right: 5em solid transparent;}
+#container .polychart > span {color:#fff; width:10em; display:block; text-align:center; position:absolute; bottom:0.3em}
+.polychart .l1 {border-bottom:0em solid #555; transition: all 700ms ease-in-out 0s; -webkit-transition: all 700ms ease-in-out 0s; -moz-transition: all 700ms ease-in-out 0s;}
+.polychart .l2 {border-bottom:0em solid #333; transition: all 700ms ease-in-out 0s; -webkit-transition: all 700ms ease-in-out 0s; -moz-transition: all 700ms ease-in-out 0s;}
+
+/*position*/
+#container .polychart > div.l2 {bottom:-2px;}
+
+/*columns*/
+#container .columns {overflow:hidden; position:absolute; width:100%; height:10em; top:0; left:0;}
+#container .columns span {display:block; width:100%; height:1em;}
+
